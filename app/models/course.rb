@@ -1,8 +1,9 @@
 class Course < ApplicationRecord
 	mount_uploader :image, ImageUploader
-	has_many :images
+	
 	belongs_to :user
 	has_many :sections
+	has_many :enrollments
 
 	validates :title, presence: true
 	validates :description, presence: true
