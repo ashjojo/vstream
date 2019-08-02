@@ -19,11 +19,15 @@
       <a class="navbar-brand" href="<%= root_path %>">V Stream</a>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
            <li class="nav-item">
         <%= link_to 'See All Courses', courses_path, class: 'nav-link' %>
       </li>
         </ul>
+
+
       <ul class="navbar-nav">
         <% if user_signed_in? %>
           <li class="nav-item">
@@ -72,7 +76,7 @@
         <br />
         <%= link_to 'Careers', '#' %>
         <br />
-        <%= link_to 'Privacy Policy', privacy_path %>
+        
       </div>
       <div class="col-12 col-sm-3">
         <b>Contact</b>
@@ -89,9 +93,11 @@
         <br />
         <br />
         <%= link_to 'http://github.com/ashjojo' do %>
-  <span class="fa fa-github-square fa-2x social-button"></span>
-  <span class="fa fa-facebook-square fa-2x social-button"></span>
-  <span class="fa fa-twitter-square fa-2x social-button"></span>
+         <i class="fab fa-github-square fa-2x social-icon"></i>
+         <% end %>
+         <i class="fab fa-facebook-square fa-2x social-icon"></i>
+         <i class="fab fa-linkedin fa-2x social-icon"></i>
+         
 
 
       </div>
@@ -100,8 +106,9 @@
 </div>
 
   <script src="http://vjs.zencdn.net/5.12.6/video.js"></script>
-  <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-
+ 
 
   </body>
+   <script src="http://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
 </html>
