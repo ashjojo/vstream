@@ -13,18 +13,29 @@ body {
 	flex: 1;
 }
 
-#footer {
-	position: relative;
-	width: 100%;
-	min-height: 100px;
-	background-color: rgba(36, 32, 33, 0.9);
-	color: white;
-	font-family: "Helvetica Neue", Helvetica;
-	padding: 10px 0px;
-	margin-top: 30px;
-}
 
 #footer a {
 	color: white;
 	font-weight: 100;
+}
+
+
+#footer {
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background-color: rgba(36, 32, 33, 0.9);
+  color: white;
+  font-family: "Helvetica Neue", Helvetica;
+  padding: 10px 0px;
+  margin-top: 30px;
+  font-weight: 100;
+} 
+
+.social-button {
+  margin: 4px;
+}
+
+.social a:hover {
+  text-decoration: none;
 }
